@@ -1,0 +1,303 @@
+.mainPart {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.mainSec {
+    color: white;
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+.heroSec {
+    box-sizing: border-box;
+    min-height: 100vh;
+    position: relative;
+    transform-style: inherit;
+    width: 100vw;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.heroSec h4 {
+    color: white;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 0px 1px 25px rgb(83, 136, 210);
+    opacity: 0;
+    animation: animate 3.5s ease-in-out 0.5s 1 forwards;
+    font-size: 15px;
+    letter-spacing: 4px;
+}
+.heroSec h1{
+    color: white;
+    font-size: 80px;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* position: absolute; */
+    /* top: 50%;
+    left: 40%; */
+    /* transform: translate(-40%, -40%); */
+    text-shadow: 0px 1px 25px rgb(83, 136, 210);
+    letter-spacing: 20px;
+    opacity: 0;
+    animation: animate 3s ease-in-out 0.3s 1 forwards;
+
+}
+@keyframes animate {
+    
+    from{
+        opacity: 0;
+        transform: translate(0, 100px);
+        filter: blur(33px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate(0);
+        filter: blur(0);
+    }
+}
+.heroSec::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background: url(https://t4.ftcdn.net/jpg/03/67/52/19/240_F_367521938_UytrzsWsTOsAreIrRuBNa93oHjhQVmGq.jpg);
+    background-size: cover;
+    transform-origin: center center;
+    transform: translateZ(-1px) scale(2) rotate(0deg);
+    z-index: -1;
+    opacity: 95%;
+    min-height: 100%;
+}
+.bg{
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 88vh;
+    background: url('../images/bg-portfolio.png');
+    filter: brightness(120%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1200px 750px;
+}
+#heroPt1{
+    width: 80%;
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#socialMedia{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+}
+.social, .social2, .social3 {
+    opacity: 0;
+}
+.social{
+    animation: animateLeft 2s ease-in-out 1s 1 forwards;
+}
+.social2{
+    animation: animateLeft 2s ease-in-out 2s 1 forwards;
+
+}
+.social3{
+    animation: animateLeft 2s ease-in-out 3s 1 forwards;
+}
+@keyframes animateLeft {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+#socialMedia i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid rgb(243, 189, 255);
+    box-shadow: 0 1px 25px rgb(255, 229, 255);
+    text-shadow: 0 1px 25px rgb(255, 229, 255);
+    transition: .5s ease;
+    animation: border-glow 2s infinite;   
+}
+#heroBtn{
+    font-size: 20px;
+    color: white;
+    text-shadow: 0px 1px 25px rgb(83, 136, 210);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+    animation: fadeRight 4s ease-in-out 0.5s 1 forwards;
+}
+@keyframes fadeRight {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+p{
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+}
+button {
+    text-decoration: none;
+    margin-top: 20px;
+    background: transparent;
+    border: 2px solid #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: .5s ease;
+    animation: border-glow 2s infinite;
+    box-shadow: 0 0 10px rgb(228, 246, 255);
+}
+button::before{
+    content: '';
+    background: inherit;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    border-radius: 50px;
+    filter: blur(20px);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+@keyframes border-glow {
+  0% {
+      border-color: rgb(165, 250, 205);
+      box-shadow: 0 2px 35px rgb(165, 250, 205);
+  }
+  25% {
+      border-color: rgb(187, 187, 255);
+      box-shadow: 0 2px 35px rgb(187, 187, 255);
+  }
+  50% {
+      border-color: rgb(252, 168, 174);
+      box-shadow: 0 2px 35px rgb(255, 219, 221);
+  }
+  75% {
+      border-color: rgb(149, 221, 228);
+      box-shadow: 0 2px 35px rgb(253, 255, 255);
+  }
+  100% {
+      border-color: rgb(255, 254, 180);
+      box-shadow: 0 2px 35px rgb(255, 254, 180);
+  }
+} 
+button:hover{
+    cursor: pointer;
+}
+.container {
+    z-index: 2;
+    position: absolute;
+    top: 100vh;
+    width: 100%;
+    height: 200vh;
+    min-width: 100vw;
+    background: #0B010E;
+}
+@media screen and (max-width: 1000px){
+    .bg{
+        background-size: 1200px 700px;
+    }
+}
+@media screen and (max-width: 900px){
+    .bg{
+        background-size: 1100px 650px;
+        justify-content: center;
+        gap: 40px;
+        flex-direction: column;
+    }
+    #heroPt1{
+        width: 100%;
+        margin-left: 0;
+    }
+    #socialMedia{
+        flex-direction: row;
+    }
+}
+@media screen and (max-width: 550px){
+    .bg{
+        background-size: 1000px 600px;
+    }
+}
+@media screen and (max-width: 470px) {
+    .heroSec h1{
+        font-size: 50px;
+    } 
+}
+@media screen and (max-width: 400px){
+    .bg{
+        background-size: 800px 500px;
+    }
+}  
+@media screen and (max-width: 345px) {
+    .heroSec h1{
+        font-size: 35px;
+        letter-spacing: 5px;
+    } 
+    .heroSec h4{
+        font-size: 12px;
+    } 
+    button{
+        padding: 5px 10px;
+    }
+    #heroBtn{
+        font-size: 15px;
+    }
+}  
+@media screen and (max-width: 325px){
+    .bg{
+        background-size: 650px 400px;
+    }
+}
+@media screen and (max-width: 300px){
+    #socialMedia{
+        position: absolute;
+        padding-top: 340px;
+        
+    }
+}
