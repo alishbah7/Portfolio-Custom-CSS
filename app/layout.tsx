@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from 'next/script';
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -38,10 +39,10 @@ export default function RootLayout({
       >
         {children}
         {/*---=== REVEAL ON SCROLL ===---*/}
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
+        <Script src="https://unpkg.com/aos@next/dist/aos.js" />
+        <Script>
             AOS.init();
-        </script>
+        </Script>
       </body>
     </html>
   );
