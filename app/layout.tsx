@@ -40,9 +40,6 @@ export default function RootLayout({
         {children}
         {/*---=== REVEAL ON SCROLL ===---*/}
         <Script src="https://unpkg.com/aos@next/dist/aos.js" />
-        <Script>
-            AOS.init();
-        </Script>
       </body>
     </html>
   );

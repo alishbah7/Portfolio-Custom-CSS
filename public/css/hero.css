@@ -81,7 +81,7 @@
     right: 0;
     bottom: 0;
     display: block;
-    background: url(https://t4.ftcdn.net/jpg/03/67/52/19/240_F_367521938_UytrzsWsTOsAreIrRuBNa93oHjhQVmGq.jpg);
+    background: url('../images/bg-img.jpg');
     background-size: cover;
     transform-origin: center center;
     transform: translateZ(-1px) scale(2) rotate(0deg);
