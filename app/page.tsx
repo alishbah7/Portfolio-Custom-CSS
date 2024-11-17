@@ -41,7 +41,7 @@ export default function Home() {
           <div className='heroSec'>
             <div className='bg' data-aos='zoom-out-right'>
               <div id='heroPt1'>
-                <h1>I'm <i>ALISHBAH</i></h1>
+                <h1>I&apos;m <i>ALISHBAH</i></h1>
                 <h4>A Full Stack Web Developer</h4>
                 <div id='heroBtn'><button className='gradient-border'><Link href='' id='heroBtn'>Explore Projects</Link></button></div>
               </div>
