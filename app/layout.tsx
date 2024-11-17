@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-// import Script from 'next/script';
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -38,8 +37,6 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
-        {/* ---=== REVEAL ON SCROLL ===--- */}
-        {/* <Script src="https://unpkg.com/aos@next/dist/aos.js" /> */}
       </body>
     </html>
   );

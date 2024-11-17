@@ -14,7 +14,7 @@
     transform-style: preserve-3d;
     height: 100%;
     width: 100%;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     overflow-x: hidden;
 
 }
@@ -293,11 +293,11 @@ button:hover{
     .bg{
         background-size: 650px 400px;
     }
-}
-@media screen and (max-width: 300px){
     #socialMedia{
         position: absolute;
-        padding-top: 340px;
-        
+        padding-top: 340px;  
+    }
+    .heroSec h1{
+        letter-spacing: 2px;
     }
 }
