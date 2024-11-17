@@ -13,7 +13,6 @@
     --foreground: #ededed;
   }
 }
-
 ::-webkit-scrollbar{
   width: 12px;
 }
@@ -23,4 +22,11 @@
 ::-webkit-scrollbar-thumb{
   background: linear-gradient(rgb(65, 19, 79), rgb(145, 28, 135));
   border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  body{
+    overflow-y: hidden;
+  }
+  
 }
