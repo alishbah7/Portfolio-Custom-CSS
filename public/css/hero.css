@@ -48,12 +48,13 @@
     font-size: 80px;
     margin: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
     /* position: absolute; */
     /* top: 50%;
     left: 40%; */
     /* transform: translate(-40%, -40%); */
     text-shadow: 0px 1px 25px rgb(83, 136, 210);
-    letter-spacing: 20px;
+    letter-spacing: 10px;
     opacity: 0;
     animation: animate 3s ease-in-out 0.3s 1 forwards;
 
