@@ -259,6 +259,12 @@ button:hover{
         flex-direction: row;
     }
 }
+@media screen and (max-width: 870px) {
+    .bg{
+        margin-top: 15px;
+    }
+    
+}
 @media screen and (max-width: 550px){
     .bg{
         background-size: 1000px 600px;

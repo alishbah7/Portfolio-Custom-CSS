@@ -13,7 +13,7 @@ header {
   z-index: 5;
 }
 .logo{
-  /* margin-top: 10px; */
+  margin-top: 10px;
   display: none;
   height: auto;
   width: 60px;
