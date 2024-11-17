@@ -261,7 +261,7 @@ button:hover{
 }
 @media screen and (max-width: 870px) {
     .bg{
-        margin-top: 15px;
+        margin-top: 0;
     }
     
 }
@@ -281,13 +281,14 @@ button:hover{
     }
     #socialMedia{
         position: absolute;
-        padding-top: 340px;  
+        padding-top: 380px;  
     }
 }  
 @media screen and (max-width: 345px) {
     .heroSec h1{
+        font-weight: 900;
         font-size: 35px;
-        letter-spacing: 5px;
+        letter-spacing: 2px;
     } 
     .heroSec h4{
         font-size: 12px;
@@ -302,9 +303,5 @@ button:hover{
 @media screen and (max-width: 325px){
     .bg{
         background-size: 650px 400px;
-    }
-    .heroSec h1{
-        font-weight: 900;
-        letter-spacing: 2px;
     }
 }
