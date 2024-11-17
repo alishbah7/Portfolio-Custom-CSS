@@ -14,7 +14,7 @@ export default function Header(){
     return (
         <div>
             <header>
-            <div className='logo' id='logo'><Image src={logo} alt="logo"/></div>
+            <Image className='logo' src={logo} alt="logo"/>
 
 
                 <input type='checkbox' id='check' />

@@ -14,6 +14,8 @@ header {
 }
 .logo{
   display: none;
+  height: auto;
+  width: 70px;
 }
 #logo{
   height: auto;
