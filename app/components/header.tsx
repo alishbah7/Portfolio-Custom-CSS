@@ -14,7 +14,8 @@ export default function Header(){
     return (
         <div>
             <header>
-                <Link href={''} className='logo' data-aos='flip-down'><Image src={logo} alt="logo"/></Link>
+            <div className='logo' id='logo'><Image src={logo} alt="logo"/></div>
+
 
                 <input type='checkbox' id='check' />
                 <label htmlFor='check' className='icon'>
