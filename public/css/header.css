@@ -13,9 +13,8 @@ header {
   z-index: 5;
 }
 .logo{
-  margin-top: 10px;
   display: none;
-  height: auto;
+  height: 60px;
   width: 60px;
 }
 #logo{
