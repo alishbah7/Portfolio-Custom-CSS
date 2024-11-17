@@ -288,7 +288,7 @@ button:hover{
 }  
 @media screen and (max-width: 345px) {
     .bg{
-        margin-top: -40px;
+        margin-top: -140px;
     }
     .heroSec h1{
         font-weight: 900;
