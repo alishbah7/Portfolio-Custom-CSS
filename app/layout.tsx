@@ -32,11 +32,15 @@ export default function RootLayout({
         {/*---=== REVEAL ON SCROLL ===---*/}
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+        <link rel="stylesheet" href="https://unpkg.com/swiper@9/swiper-bundle.min.css" />
+
+
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
       </body>
     </html>
   );
