@@ -40,7 +40,6 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
-        <script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
       </body>
     </html>
   );
