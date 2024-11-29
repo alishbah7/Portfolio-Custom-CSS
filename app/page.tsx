@@ -10,6 +10,7 @@ import Link from 'next/link'
 import Header from './components/header';
 import '../public/css/hero.css';
 
+
 export default function Home() {
   useEffect(() => {
       AOS.init({ duration: 2000, easing: 'ease', delay: 0 });
