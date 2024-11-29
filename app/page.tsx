@@ -2,7 +2,7 @@
 import { useEffect } from 'react';
 import AOS from 'aos';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCoverflow, Pagination, Autoplay, Keyboard, Mousewheel } from 'swiper/modules';
+import { EffectCoverflow, Pagination, Autoplay, Keyboard, Mousewheel } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
@@ -56,7 +56,7 @@ export default function Home() {
                 <p>I am enthusiastic and passionate full stack web developer!</p>
               </div>
               <Swiper
-                effect='coverflow'
+                effect="coverflow"
                 grabCursor={true}
                 centeredSlides={true}
                 coverflowEffect={{
@@ -95,7 +95,7 @@ export default function Home() {
                   },
                 }}
                 modules={[EffectCoverflow, Pagination, Autoplay, Keyboard, Mousewheel]}
-                className='swiper'>
+                className="swiper">
                 <div className='swiper-wrapper'>
                   <SwiperSlide className='swiper-slide swiper-slide--one'>
                     <div className='swiperContent'>
@@ -125,6 +125,10 @@ export default function Home() {
                       <Link href='#' className='Link'>Read More</Link>
                     </div>
                   </SwiperSlide>
+
+                  
+
+                  
 
                   
 
