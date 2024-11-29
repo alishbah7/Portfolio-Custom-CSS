@@ -9,7 +9,6 @@ import 'swiper/css/pagination';
 import Link from 'next/link'
 import Header from './components/header';
 import '../public/css/hero.css';
-import './globals.css'
 
 export default function Home() {
   useEffect(() => {
