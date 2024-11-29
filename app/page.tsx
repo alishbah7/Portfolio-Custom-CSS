@@ -2,8 +2,8 @@
 import { useEffect } from 'react';
 import AOS from 'aos';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectCoverflow, Pagination, Autoplay, Keyboard, Mousewheel } from 'swiper/modules';
 import 'swiper/css';
-import { EffectCoverflow, Pagination, Autoplay, Keyboard, Mousewheel } from 'swiper';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import Link from 'next/link'
