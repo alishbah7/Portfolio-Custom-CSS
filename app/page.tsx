@@ -7,10 +7,9 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import Link from 'next/link'
-import Image from "next/image";
 import Header from './components/header';
 import '../public/css/hero.css';
-import icon from '../public/images/icon.jpg'
+
 
 
 export default function Home() {
