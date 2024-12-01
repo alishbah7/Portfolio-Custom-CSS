@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import Link from 'next/link';
 import  '../../public/css/header.css';
-import Image from "next/image";
+import Image from 'next/image';
 import logo from '../../public/images/logo.png';
 
 
@@ -14,7 +14,7 @@ export default function Header(){
     return (
         <div>
             <header>
-            <Image className='logo' src={logo} alt="logo"/>
+            <Image className='logo' src={logo} alt='logo'/>
 
 
                 <input type='checkbox' id='check' />
@@ -26,7 +26,7 @@ export default function Header(){
                 <nav className='navbar'>
                     <Link href='#' className='nav-item' style={{'--i': 0} as React.CSSProperties} data-aos='fade-down'>Home</Link>
                     <Link href='#' className='nav-item' style={{'--i': 2} as React.CSSProperties} data-aos='fade-down'>About</Link>
-                    <Link href={''} className='nav-item' style={{'--i': 4} as React.CSSProperties} id='logo' data-aos='flip-down'><Image src={logo} alt="logo"/></Link>
+                    <Link href={''} className='nav-item' style={{'--i': 4} as React.CSSProperties} id='logo' data-aos='flip-down'><Image src={logo} alt='logo'/></Link>
                     <Link href='#' className='nav-item' style={{'--i': 6} as React.CSSProperties} data-aos='fade-down'>Projects</Link>
                     <Link href='#' className='nav-item' style={{'--i': 8} as React.CSSProperties} data-aos='fade-down'>Contact</Link>
                 </nav>
