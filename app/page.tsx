@@ -196,15 +196,16 @@ export default function Home() {
             </div>
             
             <div className="row">
-                <ul>
-                    <li data-aos='zoom-in'><Link href={''}>Contact Me</Link></li>
-                    <li data-aos='zoom-in'><Link href={''}>About Me</Link></li>
-                    <li data-aos='zoom-in'><Link href={''}>My Projects</Link></li>
+                <ul data-aos='zoom-in'>
+                    <li><Link href={''}>Contact Me</Link></li>
+                    <li><Link href={''}>About Me</Link></li>
+                    <li><Link href={''}>My Projects</Link></li>
                 </ul>
             </div>
         </div>
       </footer>
 
+      {/*------====== COPYRIGHT ======------*/}
       <div className="copyright">
           <p>&#169; All Rights Reserved By Alishbah.</p>
       </div>
