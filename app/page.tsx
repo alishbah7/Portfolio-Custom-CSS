@@ -35,9 +35,9 @@ export default function Home() {
                 <div id='heroBtn'><button className='gradient-border'><Link href={'/about'} id='heroBtn'>Explore Projects</Link></button></div>
               </div>
               <div id='socialMedia'>
-                <div className='social'><i className='bx bxl-linkedin'></i></div>
-                <div className='social2'><i className='bx bxl-github'></i></div>
-                <div className='social3'><i className='bx bxl-instagram' ></i></div>
+                <div className='social'><Link href={''}><i className='bx bxl-linkedin'></i></Link></div>
+                <div className='social2'><Link href={''}><i className='bx bxl-github'></i></Link></div>
+                <div className='social3'><Link href={''}><i className='bx bxl-instagram' ></i></Link></div>
               </div>
             </div>
           </div>
@@ -170,15 +170,15 @@ export default function Home() {
         data-aos-duration='3000'
         >
             <div className='list'>
-                <div className='item item1' style={{'--position': 1} as React.CSSProperties}><h2>CareerCanvas</h2></div>
-                <div className='item item2' style={{'--position': 2} as React.CSSProperties}><h2>Cactus Web</h2></div>
-                <div className='item item3' style={{'--position': 3} as React.CSSProperties}><h2>Fusion Hub</h2></div>
-                <div className='item item4' style={{'--position': 4} as React.CSSProperties}><h2 className='choice'>Choice 1</h2></div>
-                <div className='item item5' style={{'--position': 5} as React.CSSProperties}><h2 className='hekto'>Hekto</h2></div>
-                <div className='item item6' style={{'--position': 6} as React.CSSProperties}><h2>CareerCanvas</h2></div>
-                <div className='item item7' style={{'--position': 7} as React.CSSProperties}><h2>Cactus Web</h2></div>
-                <div className='item item8' style={{'--position': 8} as React.CSSProperties}><h2>Fusion Hub</h2></div>
-                <div className='item item9' style={{'--position': 9} as React.CSSProperties}><h2 className='choice'>Choice 1</h2></div>
+                <div className='item item1' style={{'--position': 1} as React.CSSProperties}><Link href={''}><h2>CareerCanvas</h2></Link></div>
+                <div className='item item2' style={{'--position': 2} as React.CSSProperties}><Link href={''}><h2>Cactus Web</h2></Link></div>
+                <div className='item item3' style={{'--position': 3} as React.CSSProperties}><Link href={''}><h2>Fusion Hub</h2></Link></div>
+                <div className='item item4' style={{'--position': 4} as React.CSSProperties}><Link href={''}><h2 className='choice'>Choice 1</h2></Link></div>
+                <div className='item item5' style={{'--position': 5} as React.CSSProperties}><Link href={''}><h2 className='hekto'>Hekto</h2></Link></div>
+                <div className='item item6' style={{'--position': 6} as React.CSSProperties}><Link href={''}><h2>CareerCanvas</h2></Link></div>
+                <div className='item item7' style={{'--position': 7} as React.CSSProperties}><Link href={''}><h2>Cactus Web</h2></Link></div>
+                <div className='item item8' style={{'--position': 8} as React.CSSProperties}><Link href={''}><h2>Fusion Hub</h2></Link></div>
+                <div className='item item9' style={{'--position': 9} as React.CSSProperties}><Link href={''}><h2 className='choice'>Choice 1</h2></Link></div>
             </div>
         </div>
       </div>
@@ -186,10 +186,30 @@ export default function Home() {
       {/*------ small screens ------*/}
       <SmallScreenSlider/>
 
+      {/*------====== FOOTER ======------*/}
+      <footer>
+        <div className="footer">
+            <div className="row">
+                <Link href={''} data-aos='zoom-in'><i className='bx bxl-linkedin'></i></Link>
+                <Link href={''} data-aos='zoom-in'><i className='bx bxl-instagram-alt'></i></Link>
+                <Link href={''} data-aos='zoom-in'><i className='bx bx-envelope'></i></Link>
+            </div>
+            
+            <div className="row">
+                <ul>
+                    <li data-aos='zoom-in'><Link href={''}>Contact Me</Link></li>
+                    <li data-aos='zoom-in'><Link href={''}>About Me</Link></li>
+                    <li data-aos='zoom-in'><Link href={''}>My Projects</Link></li>
+                </ul>
+            </div>
+        </div>
+      </footer>
 
-      <div className='h-[100vh]'>
-
+      <div className="copyright">
+          <p>&#169; All Rights Reserved By Alishbah.</p>
       </div>
+      
+      
 
     </div>
   );

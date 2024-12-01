@@ -672,4 +672,73 @@ main > div > Link {
   background-size: cover;
   background-position: center;
 }
+
+/*--===== FOOTER =====--*/
+.footer{
+  background: linear-gradient(to right,rgb(49, 19, 115), rgb(46, 7, 39), rgb(49, 19, 115));
+  padding:30px 0px;
+  text-align:center;
+}
     
+.footer .row{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  font-size: 18px;
+}  
+.footer .row{
+    text-decoration:none;
+    color: white;
+    text-shadow: 0px 1px 15px rgb(248, 218, 248);
+    transition: all 0.5s ease;
+}
+    
+.footer .row a i:hover{
+      transform: translateY(-5px);
+      transition: all 0.5s ease;
+}
+.footer .row ul{
+    width:100%;
+}
+    
+.footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    transition: all 0.5s ease;
+}
+.footer .row ul li:hover{ 
+    transform: translateY(-3px) translateX(-5px);
+    transition: all 0.5s ease;
+}
+.footer .row a i{
+    font-size: 20px;
+    margin: 0% 1%;
+    transition: all 0.5s ease;
+}
+    
+@media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .row a i{
+    margin:0% 3%;
+    }
+}
+
+/*--===== COPYRIGHT ====--*/
+.copyright{
+  background: linear-gradient(to right,rgb(49, 19, 115), rgb(46, 7, 39), rgb(49, 19, 115));
+  padding: 10px;
+  text-align: center;
+}
+.copyright p{
+  color: white;
+  font-size: 12px;
+}
